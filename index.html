@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>КНУ🧩</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="init();">
+    <div class="canvas">
+        <canvas id="canvas" class ="noselect"></canvas>
+    </div>
+    <div>
+        <div id="nav">
+            <input type=button id="btn1" class="btn" value="ЗМІНИТИ 📷" onclick="showPuzzleList();";> 
+            <input type=button id="btn2" class="btn" value="ПІДКАЗКА 🔑" onclick="showCurrentPuzzle();";>
+        </div>
+    </div>
+    <div id="puzzles" class="popup">
+        <div>
+            <img src="assets/puzzle1.jpg" onclick="changePuzzle(1);" width="30%" height="50%">
+            <img src="assets/puzzle2.jpg" onclick="changePuzzle(2);" width="30%" height="50%">
+            <img src="assets/puzzle3.jpg" onclick="changePuzzle(3);" width="30%" height="50%">
+        </div>
+    </div>
+    <div class="popup">
+        <div><img src="assets/puzzle1.jpg" id="puzzleImg"></div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
